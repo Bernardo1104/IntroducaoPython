@@ -1,19 +1,16 @@
-from calendar import prmonth
-
 
 def primeira_questao():
-    porta_destavada = False
+    porta_destravada = False
     nivel_acesso = int(input('Informe seu nível de acesso: '))
 
     if nivel_acesso > 5:
-        print('Acesso librado.')
-        porta_destavada = False
+        print('Acesso liberado.')
+        porta_destravada = True
     else:
-        porta_destavada = True
         print('Acesso negado: Permissão insuficiente.')
+        porta_destravada = False
 
-    def segunda_questao():
-        pass
+    print(f'Porta destravada: {porta_destravada}')
 
 
 if __name__ == '__main__':
